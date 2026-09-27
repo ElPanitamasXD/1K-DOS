@@ -10,7 +10,6 @@
   <a href="https://www.qemu.org/download/">[  DESCARGAR QEMU ]</a>
 </p>
 
-
 ### ╋━ [RAMA DEFINITIVA: DOS EDITION] | [VERSION 10.6] | [DESARROLLADOR: ElPanitaXD] ━╋
 
 #### ¿Qué es VORTEXDOS?
@@ -86,3 +85,6 @@ Al ejecutar `game`, la CPU lee el reloj interno para generar una ecuación aleat
 * Código fuente desarrollado en lenguaje ensamblador puro por **ElPanitaXD**.
 * Resguardado en GitHub contra actualizaciones de Windows por si se borran los archivos `.bin` y `.asm`.
 * **[NOTA]:** Cualquier computadora, incluso una computadora de 8GB, puede correrlo perfectamente.
+
+Demostracion del sistema operativo :
+<img width="800" height="449" alt="demostration" src="https://github.com/user-attachments/assets/b2c197f9-464d-428f-9da1-364b1f2493de" />
