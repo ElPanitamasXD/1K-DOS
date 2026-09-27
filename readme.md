@@ -17,7 +17,7 @@
 
 ---
 
-### 💻 HARDWARE REQUIREMENTS
+### ⓘ HARDWARE REQUIREMENTS
 * **`[+] CPU:`** Any 32-bit or 64-bit x86 processor (Intel/AMD).
 * **`[+] RAM:`** **1 Kilobyte of base memory**.
 * **`[+] DRIVE:`** 1 Virtual Floppy Disk (512-byte MBR boot sector).
@@ -26,7 +26,7 @@
 
 ---
 
-### 🕹️ OPERATOR COMMANDS (DOS EDITION)
+### 🖱 OPERATOR COMMANDS (DOS EDITION)
 Type the full command at the `vtx> ` prompt and press **ENTER** to execute:
 
 | COMMAND | MICROPROCESSOR ACTION |
@@ -45,7 +45,7 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 
 ---
 
-### 🌐 OPTION A: ONLINE STEP-BY-STEP MANUAL (NO INSTALLATION REQUIRED)
+### 🌐︎ OPTION A: ONLINE STEP-BY-STEP MANUAL (NO INSTALLATION REQUIRED)
 *Ideal for school computers or environments where you lack administrator privileges:*
 * **STEP 1:** Copy all the source code from the `vortexos.asm` file in this repository.
 * **STEP 2:** Go to the web compiler: [OneCompiler](https://onecompiler.com/assembly)
@@ -79,7 +79,7 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 
 ---
 
-### 💾 SYSTEM CREDITS
+### ⎙ SYSTEM CREDITS
 * Source code developed in pure assembly language by **ElPanitaXD**.
 * Safely backed up on GitHub against Windows Updates, preventing accidental loss of `.bin` and `.asm` files.
 * **[NOTE]:** Any computer, even a standard 8GB RAM system, can run this smoothly.
