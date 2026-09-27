@@ -26,7 +26,7 @@
 
 ---
 
-### 🕹️ OPERATOR COMMANDS (APEX EDITION)
+### 🕹️ OPERATOR COMMANDS (DOS EDITION)
 Type the full command at the `vtx> ` prompt and press **ENTER** to execute:
 
 | COMMAND | MICROPROCESSOR ACTION |
