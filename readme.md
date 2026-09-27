@@ -50,16 +50,16 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 * **STEP 1:** Copy all the source code from the `vortexos.asm` file in this repository.
 * **STEP 2:** Go to the web compiler: [OneCompiler](https://onecompiler.com/assembly)
 * **STEP 3:** Erase the placeholder sample code, paste your VortexDOS code, and click the three-dots button (`...`) in the upper corner of the editor.
-* **STEP 4:** Click **"Download"**, open your Downloads folder, and rename the downloaded file to `vortex_apex.bin`.
+* **STEP 4:** Click **"Download"**, open your Downloads folder, and rename the downloaded file to `vortex_dos.bin`.
 * **STEP 5:** Open the web emulator: [copy.sh](https://copy.sh/v86/)
-* **STEP 6:** In the *"Floppy disk image"* field, click **"Choose File"** and upload your `vortex_apex.bin`.
+* **STEP 6:** In the *"Floppy disk image"* field, click **"Choose File"** and upload your `vortex_dos.bin`.
 * **STEP 7:** Scroll to the bottom of the copy.sh page and click **"Start Emulation"**.
 
 ---
 
 ### 🔌 OPTION B: LOCAL EXECUTION GUIDE (USING CMD)
 *If you already have the required development tools downloaded on your machine:*
-* **STEP 1:** Place your `vortexos.asm` and `vortex_apex.bin` files directly onto your Windows Desktop.
+* **STEP 1:** Place your `vortexos.asm` and `vortex_dos.bin` files directly onto your Windows Desktop.
 * **STEP 2:** Open the Windows Command Prompt (`cmd`) and navigate to your Desktop by running:
   ```bash
   cd %userprofile%\Desktop
@@ -67,13 +67,13 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 * **STEP 3: HOW TO COMPILE LOCAL WITH NASM**
   Run the following command:
   ```bash
-  "C:\Users\YOUR_USERNAME\AppData\Local\bin\NASM\nasm.exe" -f bin vortexos.asm -o vortex_apex.bin
+  "C:\Users\YOUR_USERNAME\AppData\Local\bin\NASM\nasm.exe" -f bin vortexos.asm -o vortex_dos.bin
   ```
   *(Make sure to adjust the path depending on where your nasm.exe is located).*
 * **STEP 4: HOW TO BOOT IN LOCAL QEMU (MSYS2)**
   Run the following command:
   ```bash
-  "C:\msys64\ucrt64\bin\qemu-system-x86_64.exe" -drive format=raw,file=vortex_apex.bin,if=floppy
+  "C:\msys64\ucrt64\bin\qemu-system-x86_64.exe" -drive format=raw,file=vortex_dos.bin,if=floppy
   ```
   *(Modify the path quotes based on your specific qemu-system-x86_64.exe location).*
 
