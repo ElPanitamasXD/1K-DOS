@@ -26,7 +26,7 @@
 
 ---
 
-### 🖱 OPERATOR COMMANDS (DOS EDITION)
+### >_ OPERATOR COMMANDS (DOS EDITION)
 Type the full command at the `vtx> ` prompt and press **ENTER** to execute:
 
 | COMMAND | MICROPROCESSOR ACTION |
@@ -57,7 +57,7 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 
 ---
 
-### 🔌 OPTION B: LOCAL EXECUTION GUIDE (USING CMD)
+### </> OPTION B: LOCAL EXECUTION GUIDE (USING CMD)
 *If you already have the required development tools downloaded on your machine:*
 * **STEP 1:** Place your `vortexos.asm` and `vortex_dos.bin` files directly onto your Windows Desktop.
 * **STEP 2:** Open the Windows Command Prompt (`cmd`) and navigate to your Desktop by running:
