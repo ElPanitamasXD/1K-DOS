@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="VortexLOGO.png" width="260" height="260" style="image-rendering: pixelated; image-rendering: crisp-edges;">
+  <img src="VortexLOGO.png" width="300" height="300" style="image-rendering: pixelated; image-rendering: crisp-edges;">
 </p>
 
 <h1 align="center">VORTEX DOS SHELL</h1>
