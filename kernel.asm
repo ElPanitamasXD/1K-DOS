@@ -466,7 +466,7 @@ game_target    dw 0
 text_color     db 0x0B
 
 msg_term_head  db ' === 1K-DOS ===', 13, 10, 'Escriba "help" para comandos.', 13, 10, 0
-prompt_str     db 'vtx> ', 0
+prompt_str     db 'DOS> ', 0
 msg_unknown    db 'Comando invalido.', 13, 10, 0
 msg_help       db 'Comandos: help, echo [msg], game, cls, color [1-5], info, time, date, shutdown, rb', 13, 10, 0
 msg_game_start db 'MathLock Active: ', 0
