@@ -10,7 +10,7 @@
   <a href="https://www.qemu.org/download/">[ DOWNLOAD QEMU ]</a>
 </p>
 
-### ╋━ [DEFINITIVE BRANCH: MID-LEVEL STAGE 2 EDITION] | [VERSION 11.0] | [DEVELOPER: ElPanitaXD] ━╋
+### ╋━ [DEFINITIVE BRANCH: DOS EDITION] | [VERSION 11.0] | [DEVELOPER: ElPanitaXD] ━╋
 
 #### What is VORTEX DOS?
 **VORTEX DOS** is an independent operating system created by **ElPanitaXD**. It is written 100% in assembly language. It has passed the basic 512-byte constraint by implementing a **Two-Stage Bootloader Architecture (Stage 1 Master Boot Record & Stage 2 Operating System Kernel)**, allowing unlimited features and memory scalability.
