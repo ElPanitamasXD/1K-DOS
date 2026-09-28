@@ -2,7 +2,7 @@
   <img src="VortexLOGO.png" width="300" height="300" style="image-rendering: pixelated; image-rendering: crisp-edges;">
 </p>
 
-<h1 align="center">VORTEX DOS</h1>
+<h1 align="center">1K-DOS</h1>
 
 <p align="center">
   <a href="https://nasm.us/pub/nasm/releasebuilds/">[ DOWNLOAD NASM ]</a>
@@ -37,7 +37,7 @@ Type the full command at the `vtx> ` prompt and press **ENTER** to execute:
 | **`game`** | Advanced Mathematical Firewall (Random 1 to 2-digit addition/subtraction). |
 | **`cls`** | Clears the console, realigns the cursor to Col 0/Row 2, preserving the header. |
 | **`color`** | Type `color ` followed by `1` (Blue), `2` (Green), `3` (Cyan), `4` (Red), or `5` (White) to change the entire terminal typography dynamically. |
-| **`info`** | Renders a high-resolution, custom ASCII text art logo of VORTEXOS and developer details. |
+| **`info`** | Renders a high-resolution, custom ASCII text art logo of 1K-DOS and developer details. |
 | **`time`** | Queries the motherboard RTC (Real-Time Clock) chip to output the system time (`HH:MM:SS`). |
 | **`date`** | Queries the motherboard RTC calendar registers to output the date (`DD/MM/YYYY`). |
 | **`shutdown`**| Connects to the BIOS APM (Advanced Power Management) interface to shut down QEMU safely. |
@@ -54,7 +54,7 @@ When running `game`, the CPU reads the internal system clock to generate a rando
 ### </> OPTION B: LOCAL EXECUTION GUIDE (USING CMD & POWERSHELL)
 *To compile the multi-file architecture uncorrupted directly from your machine:*
 
-* **STEP 1:** Place your `boot.asm` and `vortexos.asm` files directly onto your Windows Desktop.
+* **STEP 1:** Place your `boot.asm` and `1-K.asm` files directly onto your Windows Desktop.
 * **STEP 2:** Open the Windows Command Prompt (`cmd`) and navigate to your Desktop by running:
   ```bash
   cd %userprofile%\Desktop
@@ -64,17 +64,17 @@ When running `game`, the CPU reads the internal system clock to generate a rando
   ```bash
   "C:\Users\YOUR_USERNAME\AppData\Local\bin\NASM\nasm.exe" -f bin boot.asm -o boot.bin
   ```
-* **STEP 4: COMPILE STAGE 2 (VORTEXOS KERNEL)**
+* **STEP 4: COMPILE STAGE 2 (1K-DOS KERNEL)**
   Run the following command to assemble the unconstrained middle-level system core:
   ```bash
-  "C:\Users\YOUR_USERNAME\AppData\Local\bin\NASM\nasm.exe" -f bin vortexos.asm -o vortex_dos.bin
+  "C:\Users\YOUR_USERNAME\AppData\Local\bin\NASM\nasm.exe" -f bin 1-K.asm -o 1-DOS.bin
   ```
 * **STEP 5: BINARY FUSION (IMAGE GENERATION)**
   Run this PowerShell command inside the CMD to bind both files side-by-side into a raw disk image without losing raw bytes:
   ```bash
-  powershell -Command "[System.IO.File]::WriteAllBytes('vtx_floppy.img', [System.IO.File]::ReadAllBytes('boot.bin') + [System.IO.File]::ReadAllBytes('vortex_dos.bin'))"
+  powershell -Command "[System.IO.File]::WriteAllBytes('vtx_floppy.img', [System.IO.File]::ReadAllBytes('boot.bin') + [System.IO.File]::ReadAllBytes('1-DOS.bin'))"
   ```
-* **STEP 6: BOOTING VORTEX DOS IN QEMU**
+* **STEP 6: BOOTING 1K-DOS IN QEMU**
   Fire up the virtual x86 machine using the following parameters:
   ```bash
   "C:\msys64\ucrt64\bin\qemu-system-x86_64.exe" -drive format=raw,file=vtx_floppy.img,if=floppy
