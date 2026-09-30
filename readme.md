@@ -1,6 +1,5 @@
-<p align="center"> <img src="1K-LOGO.png" width="300" height="300" style="image-rendering: pixelated; image-rendering: crisp-edges;"> </p> 
 
-<h1 align="center">1K-DOS</h1> 
+<h1 align="center">86a-DOS</h1> 
 
 <p align="center"> 
   <a href="https://nasm.us/pub/nasm/releasebuilds/">[ DESCARGAR NASM ]</a> 
@@ -10,8 +9,8 @@
 
 ### ╋━ [RAMA DEFINITIVA: EDICIÓN DOS] | [VERSIÓN 11.0] | [DESARROLLADOR: ElPanitaXD] ━╋ 
 
-#### ¿Qué es VORTEX DOS?
-**VORTEX DOS** es un sistema operativo independiente creado por **ElPanitaXD**. Está escrito 100% en lenguaje ensamblador (Assembly). Ha superado la restricción básica de los 512 bytes mediante la implementación de una **arquitectura de cargador de arranque de dos etapas (Etapa 1: Registro de arranque principal [MBR] y Etapa 2: Núcleo del sistema operativo [Kernel])**, lo que permite características ilimitadas y escalabilidad de memoria.
+#### ¿Qué es 86a-DOS?
+**86a-DOS** es un sistema operativo independiente creado por **ElPanitaXD**. Está escrito 100% en lenguaje ensamblador (Assembly). Ha superado la restricción básica de los 512 bytes mediante la implementación de una **arquitectura de cargador de arranque de dos etapas (Etapa 1: Registro de arranque principal [MBR] y Etapa 2: Núcleo del sistema operativo [Kernel])**, lo que permite características ilimitadas y escalabilidad de memoria.
 
 ---
 
@@ -65,17 +64,17 @@ Ejecuta el siguiente comando para generar el sector MBR de 512 bytes:
 * **PASO 4: COMPILAR ETAPA 2 (KERNEL DE 1K-DOS)**
 Ejecuta el siguiente comando para ensamblar el núcleo del sistema de nivel medio sin restricciones:
 ```bash
-"C:\Users\TU_USUARIO\AppData\Local\bin\NASM\nasm.exe" -f bin kernel.asm -o os.bin
+"C:\Users\TU_USUARIO\AppData\Local\bin\NASM\nasm.exe" -f bin kernel.asm -o bootloader.bin
 ```
 * **PASO 5: FUSIÓN BINARIA (GENERACIÓN DE IMAGEN)**
 Ejecuta este comando de PowerShell dentro del CMD para unir ambos archivos uno al lado del otro en una imagen de disco cruda sin perder bytes:
 ```bash
-powershell -Command "[System.IO.File]::WriteAllBytes('vtx_floppy.img', [System.IO.File]::ReadAllBytes('boot.bin') + [System.IO.File]::ReadAllBytes('os.bin'))"
+powershell -Command "[System.IO.File]::WriteAllBytes('86a_floppy.img', [System.IO.File]::ReadAllBytes('boot.bin') + [System.IO.File]::ReadAllBytes('bootloader.bin'))"
 ```
-* **PASO 6: ARRANCAR 1K-DOS EN QEMU**
+* **PASO 6: ARRANCAR 86a-DOS EN QEMU**
 Enciende la máquina virtual x86 utilizando los siguientes parámetros:
 ```bash
-"C:\msys64\ucrt64\bin\qemu-system-x86_64.exe" -drive format=raw,file=vtx_floppy.img,if=floppy
+"C:\msys64\ucrt64\bin\qemu-system-x86_64.exe" -drive format=raw,file=86a_floppy.img,if=floppy
 ```
 
 ---
