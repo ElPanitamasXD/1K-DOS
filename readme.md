@@ -84,7 +84,8 @@ Enciende la máquina virtual x86 utilizando los siguientes parámetros:
 * Respaldado de forma segura en GitHub contra actualizaciones inesperadas de Windows o corrupciones del contexto del sistema.
 
 #### Demostración del sistema operativo:
-<img width="800" height="449" alt="demostration" src="https://github.com/user-attachments/assets/dbfee6a2-d9cf-4c18-8530-7301fcf95bc8" />
+<img width="800" height="449" alt="demostration" src="https://github.com/user-attachments/assets/a3d1ab8f-8260-4c8f-8b88-c5b9f3b36cc3" />
+
 
 
 
