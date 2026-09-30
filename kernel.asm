@@ -465,7 +465,7 @@ game_active    db 0
 game_target    dw 0
 text_color     db 0x0B
 
-msg_term_head  db ' === 1K-DOS ===', 13, 10, 'Escriba "help" para comandos.', 13, 10, 0
+msg_term_head  db ' === 1024-DOS ===', 13, 10, 'Escriba "help" para comandos.', 13, 10, 0
 prompt_str     db 'DOS> ', 0
 msg_unknown    db 'Comando invalido.', 13, 10, 0
 msg_help       db 'Comandos: help, echo [msg], game, cls, color [1-5], info, time, date, shutdown, rb', 13, 10, 0
@@ -476,14 +476,15 @@ msg_game_err   db ' [LOSE] (X_X)', 0
 
 msg_color_err  db 'Uso: color [1=Azul, 2=Verde, 3=Cyan, 4=Rojo, 5=Blanco]', 13, 10, 0
 
-msg_info_art db '  __________________________________________', 13, 10, \
-                ' |   __    _       ______   _____ _____     |', 13, 10, \
-                ' |  /_ |  | |     |  _  \ /  ___/  ___|     |', 13, 10, \
-                ' |   | |  | | __  | | | | \ `--.\ `--.      |', 13, 10, \
-                ' |   | |  | |/ /  | | | |  `--. \`--. \     |', 13, 10, \
-                ' |   | | _|   < _ | |/ /  /\__/ /\__/ /     |', 13, 10, \
-                ' |   |_|(_)_|\_(_)|___/   \____/\____/      |', 13, 10, \
-                '  ------------------------------------------', 13, 10, \
-                '  Creado con exito por ElPanitamasXD.', 13, 10, 0
+msg_info_art db ' ____________________________________________', 13, 10
+             db ' |  _____   ____   _____  __  ___ ___  _  _  |', 13, 10
+             db ' | |  __ \ / __ \ / ____|/_ |/ _ \__ \| || | |', 13, 10
+             db ' | | |  | | |  | | (___   | | | | | ) | || |_|', 13, 10
+             db ' | | |  | | |  | |\___ \  | | | | |/ /|__  |', 13, 10
+             db ' | | |__| | |__| |____) | | | |_| / /_   | | |', 13, 10
+             db ' | |_____/ \____/|_____/  |_|\___/____|  |_| |', 13, 10
+             db ' --------------------------------------------', 13, 10
+             db ' Creado con exito por ElPanitamasXD.', 13, 10, 0
+
 
 cmd_buffer:
